@@ -9,7 +9,7 @@
 &emsp;&emsp;HMAC是密钥相关的哈希运算消息认证码（Hash-based Message Authentication Code）的缩写，由H.Krawezyk，M.Bellare，R.Canetti于1996年提出的一种基于Hash函数和密钥进行消息认证的方法，并于1997年作为RFC2104被公布，并在IPSec和其他网络协议（如SSL）中得以广泛应用，现在已经成为事实上的Internet安全标准。它可以与任何迭代散列函数捆绑使用。  
 &emsp;&emsp;常用算法：HMACMD5、HMACSHA1、HMACSHA256、HMACSHA384和HMACSHA512。
 
-######参考  
+###### 参考  
 [1].[常见加密算法之单向加密](https://cloud.tencent.com/developer/article/1608669)  
 [2].[JAVA中的加密算法之单向加密](https://cloud.tencent.com/developer/article/1608733)  
 [3].[MD4、MD5、SHA1、HMAC、HMAC_SHA1区别](https://blog.csdn.net/hero272285642/article/details/100032749)  
