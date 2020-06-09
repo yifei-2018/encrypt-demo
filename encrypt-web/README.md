@@ -1,9 +1,9 @@
 # https请求响应
 ### 1. SSL建立连接过程：  
-![image](https://img-blog.csdnimg.cn/20190803111825690.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9taW5nMTAwMDAx,size_16,color_FFFFFF,t_70)
+![image](https://github.com/yifei-2018/img-repository/blob/master/encrypt-demo/quote_https-requestProcess.png?raw=true)
 
 流程说明：  
-1. client向server发送请求（如：https://www.yifei.com），连接到server的443端口，发送的信息主要是随机值1和客户端支持的加密算法;  
+1. client向server发送请求（如：https://*.yifei.com），连接到server的443端口，发送的信息主要是随机值1和客户端支持的加密算法;  
 2. server接收到信息之后给予client响应握手信息，包括随机值2和匹配好的协商加密算法，这个加密算法一定是client发送给server加密算法的子集;  
 3. 随即server给client发送第二个响应报文是数字证书。服务端必须要有一套数字证书，可以自己制作，也可以向组织申请。区别就是自己颁发的证书需要客户端验证通过，才可以继续访问，而使用受信任的公司申请的证书则不会弹出提示页面，这套证书其实就是一对公钥和私钥。传送证书，这个证书其实就是公钥，只是包含了很多其它信息，如证书的颁发机构，过期时间、服务端的公钥，第三方证书认证机构(CA)的签名，服务端的域名信息等内容;  
 4. 客户端解析证书，这部分工作是由客户端的TLS来完成的，首先会验证公钥是否有效，比如颁发机构，过期时间等等，如果发现异常，则会弹出一个警告框，提示证书存在问题。如果证书没有问题，那么就生成一个随机值（预主秘钥）;  
@@ -30,5 +30,5 @@
 
 ##### todo
 1. http升级至https操作流程；  
-[让你的网站免费支持 HTTPS 及 Nginx 平滑升级](https://www.cnblogs.com/mafly/p/https_nginx.html)
+[让你的网站免费支持 HTTPS 及 Nginx 平滑升级](https://www.cnblogs.com/mafly/p/https_nginx.html)  
 [将网站从http转换成https](https://www.cnblogs.com/angrybb/p/8540838.html)
