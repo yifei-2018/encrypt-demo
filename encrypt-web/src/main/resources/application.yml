@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: encrypt-web
+server:
+  port: 9090
+  servlet:
+    context-path: /encryptWeb
