@@ -14,7 +14,7 @@
     </modules>
 
     <properties>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <lombok.version>1.18.8</lombok.version>
         <logback.version>1.2.3</logback.version>
         <commons-lang.version>2.6</commons-lang.version>
